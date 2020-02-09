@@ -41,7 +41,8 @@ const routes = [
 
 const router = new VueRouter({
     mode: 'history',
-    routes
+    routes,
+    base: '/weather-vue/'
 });
 
 router.beforeEach((to, from, next) => {
